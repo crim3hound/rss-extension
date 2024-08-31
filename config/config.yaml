@@ -21,11 +21,6 @@ feeds:
   json: true
   atom: true
 
-#templates:
-#  rss: "@theme/partials/feeds/rss.xml.twig"
-#  json: "@theme/partials/feeds/json.twig"
-#  atom: "@theme/partials/feeds/atom.xml.twig"
-
 # Autodiscovery allows Feed aggregators to find your feeds more easily.
 autodiscovery: true
 
@@ -56,6 +51,9 @@ sitewide:
   feed_records: 10
   content_length: 0
   content_types: [ entries, pages ]
+  #rss_template: "@theme/partials/feeds/rss.xml.twig"
+  #atom_template: "@theme/partials/feeds/atom.xml.twig"
+  #json_template: "@theme/partials/feeds/json.twig"
 
 # ContentType specific examples
 # -----------------------------

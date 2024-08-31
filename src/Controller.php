@@ -26,28 +26,22 @@ class Controller extends ExtensionController
         }
 
         if ($type === 'rss') {
-            $template = isset($config['templates']['rss'])
-            ? $config['templates']['rss']
-            : '@rss-extension/rss.xml.twig';
+            $template = '@rss-extension/rss.xml.twig';
 
             if (!empty($config['rss_template'])) {
                 $template = $config['rss_template'];
             }
             $headerContentType = 'application/rss+xml;charset=UTF-8';
         } elseif ($type === 'atom') {
-            $template = isset($config['templates']['atom'])
-            ? $config['templates']['atom']
-            : '@rss-extension/atom.xml.twig';
+            $template = '@rss-extension/atom.xml.twig';
 
             if (!empty($config['atom_template'])) {
                 $template = $config['atom_template'];
             }
             $headerContentType = 'application/atom+xml;charset=UTF-8';
         } else {
-            $template = isset($config['templates']['json'])
-            ? $config['templates']['json']
-            : '@rss-extension/json.twig';
-            
+            $template = '@rss-extension/json.twig';
+
             if (!empty($config['json_template'])) {
                 $template = $config['json_template'];
             }
