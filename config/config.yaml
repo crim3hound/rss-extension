@@ -21,6 +21,11 @@ feeds:
   json: true
   atom: true
 
+#templates:
+#  rss: "@theme/partials/feeds/rss.xml.twig"
+#  json: "@theme/partials/feeds/json.twig"
+#  atom: "@theme/partials/feeds/atom.xml.twig"
+
 # Autodiscovery allows Feed aggregators to find your feeds more easily.
 autodiscovery: true
 
